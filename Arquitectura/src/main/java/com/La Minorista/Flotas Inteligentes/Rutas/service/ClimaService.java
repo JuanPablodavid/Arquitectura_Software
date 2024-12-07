@@ -1,6 +1,7 @@
 package main.java.com.La Minorista.Flotas Inteligentes.Rutas.service;
 
-// Implementacion de la "O" Abierto/Cerrado
+// Implementacion de la "O" Abierto/Cerrado. Se esta implementando de forma en que clima  puede ser extendida
+// con diferentes implementaciones(por ejemplo, conectando con diferentes Apis)
 
 public class ClimaService {
    
@@ -14,7 +15,8 @@ public class ClimaService {
         }
     }
 
-  //Segregacion de interfaces "I"
+  //Segregacion de interfaces "I". Se estan usando solamente las necesarias, entonces de llega a dividir interfaces
+  //grandes en varias especificas
 
     public interface Alerta{
        void enviaralerta(String mensaje);
